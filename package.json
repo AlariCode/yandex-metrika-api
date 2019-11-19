@@ -1,0 +1,44 @@
+{
+	"name": "yandex-metrika-api",
+	"version": "0.0.1",
+	"description": "Library for easy Metrika API usage",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"prepare": "./node_modules/.bin/tsc -p tsconfig.json",
+		"test": "mocha --require ts-node/register tests/**/*.ts"
+	},
+	"author": "Anton Larichev <antonlarichev@gmail.com>",
+	"keywords": [
+		"yandex",
+		"metrika",
+		"typescript",
+		"nodejs"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/AlariCode/yandex-metrika-api"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/AlariCode/yandex-metrika-api/issues"
+	},
+	"homepage": "https://github.com/AlariCode/yandex-metrika-api",
+	"dependencies": {
+		"axios": "^0.19.0",
+		"bson": "^4.0.2"
+	},
+	"devDependencies": {
+		"@types/bson": "^4.0.0",
+		"@types/chai": "^4.1.4",
+		"@types/mocha": "^5.2.5",
+		"@types/sinon": "^5.0.2",
+		"chai": "^4.1.2",
+		"mocha": "^5.2.0",
+		"reflect-metadata": "^0.1.12",
+		"sinon": "^6.2.0",
+		"ts-node": "^7.0.1",
+		"tslint": "^5.8.0",
+		"typescript": "^3.2.2"
+	}
+}
